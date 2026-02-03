@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXRectangleToggleNode?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="404.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dk.easv.ticketgui.LoginController">
+   <left>
+      <AnchorPane prefHeight="598.0" prefWidth="410.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="txtUsername" layoutX="125.0" layoutY="380.0" promptText="Enter Username" />
+            <Label layoutX="125.0" layoutY="355.0" text="Username:" />
+            <Label layoutX="127.0" layoutY="416.0" text="Password:" />
+            <Label layoutX="101.0" layoutY="155.0" text="Event ticket system">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="140.0" layoutY="205.0" text="Sign in to your account" />
+            <PasswordField fx:id="pswPassword" layoutX="128.0" layoutY="441.0" promptText="Enter Password" />
+            <Label layoutX="102.0" layoutY="259.0" text="User Type" />
+            <MFXRectangleToggleNode fx:id="tbCoordinator" layoutX="199.0" layoutY="282.0" prefHeight="10.0" prefWidth="46.0" text="Coordinator" />
+            <MFXRectangleToggleNode fx:id="tbAdmin" layoutX="106.0" layoutY="283.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Admin" />
+            <Pane layoutX="130.0" layoutY="14.0" prefHeight="137.0" prefWidth="139.0" style="-fx-border-color: black; -fx-border-radius: 100;">
+               <children>
+                  <ImageView fitHeight="115.0" fitWidth="109.0" layoutX="15.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../../pngegg.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <MFXButton buttonType="RAISED" layoutX="172.0" layoutY="495.0" text="Sign in" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
