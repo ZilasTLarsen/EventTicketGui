@@ -29,12 +29,12 @@
                <children>
                   <ImageView fitHeight="115.0" fitWidth="109.0" layoutX="15.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../Data/Pictures/pngegg.png" />
+                        <Image url="@Pictures/pngegg.png" />
                      </image>
                   </ImageView>
                </children>
             </Pane>
-            <MFXButton buttonType="RAISED" layoutX="172.0" layoutY="371.0" text="Sign in" />
+            <MFXButton fx:id="btnSignIn" buttonType="RAISED" layoutX="172.0" layoutY="371.0" onAction="#onSignInClick" text="Sign in" />
          </children>
       </AnchorPane>
    </left>
