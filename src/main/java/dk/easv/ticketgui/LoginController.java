@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
@@ -19,6 +20,8 @@ public class LoginController {
     private PasswordField pswPassword;
     @FXML
     private TextField txtUsername;
+    @FXML
+    private Button btnSignIn;
 
     @FXML
     private void onSignInClick(ActionEvent actionEvent) throws IOException {
